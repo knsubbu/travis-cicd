@@ -18,9 +18,13 @@ class TravisDemoApplicationTests {
     private MockMvc mockMvc;
 
     @Test
-    public void testHelo() throws Exception {
+    public void testHello() throws Exception {
         mockMvc.perform( get("/hello")).andExpect(status().isOk());
     }
 
+    @Test
+    public void testHelloFailure() throws Exception {
+        mockMvc.perform( get("/helloFail")).andExpect(status().isOk());
+    }
 
 }
