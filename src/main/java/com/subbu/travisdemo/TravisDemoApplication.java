@@ -16,7 +16,7 @@ public class TravisDemoApplication {
 
     @GetMapping("/hello")
     public String greet(){
-        return "Hello Travis CI CD";
+        return "Hello Travis CI CD!";
     }
 
 }
